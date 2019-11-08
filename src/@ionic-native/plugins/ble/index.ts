@@ -322,6 +322,15 @@ export class BLE extends IonicNativePlugin {
   }
 
   /**
+   * Request Connection Priority.
+   * 
+   */
+  @Cordova()
+  requestConnectionPriority(deviceId: string, connectionPriority: number): Promise<any> {
+    return;
+  }
+
+  /**
    * Request MTU size.
    * May be used to fix the Error 14 "Unlikely" on write requests with more than 20 bytes.
    * @usage
